@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+:root {
+    --screen-back-: #2d3142;
+    --screen-clr-: #95a69f;
+    --btn-wrapper-: #3d4153;
+    --btn-back-: #2d3142;
+    --btn-simp-: #95a69f;
+}
+body{
+    background-color: rgb(88, 88, 88);
+}
+.container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.calc {
+    width: 90%;
+    max-width: 400px;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.screen input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 4rem .75rem .5rem 1.25rem;
+    font-size: 2.5rem;
+    background-color: var(--screen-back-);
+    color: var(--screen-clr-);
+}
+.buttonWrapper {
+    width: 100%;
+    background-color: var(--btn-wrapper-);
+    padding-bottom: 1rem;
+}
+.buttonRow {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 1rem;
+    color: var(--btn-simp-);
+}
+.large {
+    font-size: 1rem !important;
+}
+.buttonRow div {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    cursor: pointer;
+    background-color: #ffffff0e;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.buttonRow div:active {
+    transform: scale(.925);
+}
+.disable{
+    visibility: hidden;
+}
